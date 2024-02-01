@@ -13,7 +13,7 @@ return
 time.Sleep(time.Millisecond * 500)
 err = cmd.Process.Signal(os.Interrupt)
 if err != nil {
-_, _ = fmt.Fprint(os.Stderr , "Signal: " + err.Error())
+_, _ = fmt.Fprintf(os.Stderr , "Signal: " + err.Error())
 return 
 }
 
